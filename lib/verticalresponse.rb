@@ -12,6 +12,7 @@ require_relative 'verticalresponse/api/message.rb'
 require_relative 'verticalresponse/api/resource.rb'
 require_relative 'verticalresponse/api/response.rb'
 require_relative 'verticalresponse/api/social_post.rb'
+require_relative 'verticalresponse/api/webhooks.rb'
 
 module VerticalResponse
   API_VERSION  = "v1"

@@ -114,6 +114,10 @@ module VerticalResponse
         VerticalResponse::API::Contact.fields(params)
       end
 
+      def create_webhook(params = {})
+        params.merge!({access_token: @access_token})
+        VerticalResponse::API::Webhook.create_hook(params)
+      end
     end
   end
 end
