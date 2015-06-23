@@ -118,6 +118,11 @@ module VerticalResponse
         params.merge!({access_token: @access_token})
         VerticalResponse::API::Webhook.create_hook(params)
       end
+
+      def user_info(params = {})
+        params.merge!({access_token: @access_token})
+        VerticalResponse::API::User.info(params)
+      end
     end
   end
 end
